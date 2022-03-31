@@ -13,7 +13,7 @@ outputs:
     description: 'boolean value indicating if content was scheduled for the current time period'
 runs:
   using: 'node12'
-  main: 'index.js'
+  main: 'dist/index.js'
 branding:
   color: 'purple'
   icon: 'clock'
