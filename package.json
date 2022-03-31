@@ -1,0 +1,17 @@
+{
+  "name": "ownActions",
+  "version": "1.0.0",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "gray-matter": "^4.0.3",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "recursive-readdir": "^2.2.2"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build index.js -o dist --source-map"
+  }
+}
