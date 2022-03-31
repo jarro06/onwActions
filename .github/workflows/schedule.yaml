@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: jannekem/publish-schedule-action@v1.1
+    - uses: ./.github/actions/hello-world-action
       with:
         time_range_minutes: 720
         content_directory: content
