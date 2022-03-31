@@ -2,17 +2,15 @@ name: Schedule post
 
 on:
   pull_request:
-  
+
 jobs:
-  schedule:
+  logger:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - uses: ./.github/actions/sample
       with:
-        time_range_minutes: 720
-        content_directory: content
-      id: publish
-    - name: Run something else
-      if: steps.publish.outputs.is_scheduled == 'true'
-      run: echo "It is scheduled!"
+        what_to_log: true
+    - uses: ./.github/actions/sample
+      with:
+        what_to_log: false
