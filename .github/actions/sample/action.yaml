@@ -1,7 +1,7 @@
 name: 'Markdown Publish Schedule'
 description: 'Parses the publish date from Markdown file front matters to see whether there is scheduled content that needs to be published'
 inputs:
-  interval:
+  time_range_minutes:
     description: 'number of minutes from the current time that should be included for the check'
     required: true
   content_directory:
@@ -13,7 +13,7 @@ outputs:
     description: 'boolean value indicating if content was scheduled for the current time period'
 runs:
   using: 'node12'
-  main: 'dist/index.js'
+  main: 'index.js'
 branding:
   color: 'purple'
   icon: 'clock'

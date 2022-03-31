@@ -3,7 +3,7 @@ const recursiveReaddir = require('recursive-readdir');
 const matter = require('gray-matter');
 const moment = require('moment');
 
-const timeRangeInMinutes = core.getInput('interval', {required: true});
+const timeRangeInMinutes = core.getInput('time_range_minutes', {required: true});
 const endTime = moment.utc().seconds(0);
 const startTime = endTime.clone().subtract(parseInt(timeRangeInMinutes), 'minutes');
 const contentDir = core.getInput('content_directory', {default: ''});
