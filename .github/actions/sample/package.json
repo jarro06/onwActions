@@ -2,12 +2,7 @@
   "name": "ownActions",
   "version": "1.0.0",
   "dependencies": {
-    "@actions/core": "^1.6.0",
-    "gray-matter": "^4.0.3",
-    "moment": "^2.29.1"
-  },
-  "devDependencies": {
-    "recursive-readdir": "^2.2.2"
+    "@actions/core": "^1.6.0"
   },
   "main": "index.js",
   "scripts": {

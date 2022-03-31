@@ -1,16 +1,9 @@
-name: 'Markdown Publish Schedule'
-description: 'Parses the publish date from Markdown file front matters to see whether there is scheduled content that needs to be published'
+name: 'Sample custom action'
+description: 'Just loggin stuff'
 inputs:
-  time_range_minutes:
-    description: 'number of minutes from the current time that should be included for the check'
+  what_to_log:
+    description: 'log a or log b'
     required: true
-  content_directory:
-    description: 'directory to search for .md files'
-    required: false
-    default: './'
-outputs:
-  is_scheduled:
-    description: 'boolean value indicating if content was scheduled for the current time period'
 runs:
   using: 'node12'
   main: 'dist/index.js'
