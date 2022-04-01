@@ -12,7 +12,6 @@ jobs:
         uses: gsactions/commit-message-checker@v1
         with:
           pattern: '\ABC-[0-9]* - $'
-          flags: 'gm'
           error: 'Your first line has to contain a feature number'
       - name: pull-request
         uses: repo-sync/pull-request@v2
